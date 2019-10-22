@@ -5,7 +5,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Blog - IFBA</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="{{route('posts.index')}}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('posts.create')}}">Cadastrar post</a>
@@ -60,7 +60,7 @@
     </main>
 
     <footer class="container">
-      <p>© Company 2017-2018</p>
+      <p>© IFBA 2019</p>
     </footer>
 
     <!-- Bootstrap core JavaScript

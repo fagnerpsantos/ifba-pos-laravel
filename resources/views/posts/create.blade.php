@@ -33,7 +33,7 @@
     <label for="texto">Conteudo</label>
     <textarea class="form-control" id="texto" rows="3" name="texto"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary">Editar</button>
 </form>
 
 @endsection
