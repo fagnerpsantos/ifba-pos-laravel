@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -26,7 +27,11 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        if (Auth::check()) {
+            return view('posts.create');
+        } else {
+            return redirect()->route('posts.index');
+        }
     }
 
     /**
